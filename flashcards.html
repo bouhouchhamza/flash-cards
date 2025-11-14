@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header
+        class="d-flex flex-column flex-lg-row w-100 justify-content-around align-content-center h-lg-100"
+        style="height: auto; background-color: #d9d9d9; margin-bottom: 50px"
+      >
+        <img
+          class="img-fluid w-lg-25 h-lg-100"
+          style="width: 140px"
+          src="img\9fcc32d1-52e7-40f4-b088-cf048b03d4a2.png"
+          alt=""
+        />
+        <nav class="navbar">
+          <ul class="d-flex nav align-content-center" style="font-size: 20px">
+            <li class="nav-item">
+              <a class="nav-link active fs-sm-1" href="index.html"
+                >🏠 Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="flashcards.html"
+                >💡 Flashcards</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="quiz.html">🧠 Quiz</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="container my-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card bg-dark text-white">
+              <div class="card-header text-center text-white">
+                <h5 class="mb-0">Create A Collection</h5>
+              </div>
+              <div class="card-body">
+                <div class="mb-3">
+                  <label class="form-label" for="">Collection Title</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="collection-name"
+                    id="collection-name"
+                  />
+                </div>
+                <button id="collection-submit" class="btn btn-light w-100">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="my-5">
+              <div class="card bg-dark text-white">
+                <div class="card-header text-center">
+                  <h5 class="mb-0">Add Card</h5>
+                </div>
+                <div class="card-body text-center">
+                  <div class="mb-3">
+                    <label class="form-label" for="collection-list"
+                      >Select a Collection</label
+                    >
+                    <select
+                      class="form-select"
+                      name="collection-list"
+                      id="collection-list"
+                    >
+                      <option selected>Choisir une collection</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="">Put a Question</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name=""
+                      id="Question-input"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="">Put answer</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name=""
+                      id="Answer-input"
+                    />
+                  </div>
+                  <button id="card-add" class="btn btn-light w-100">
+                    Add Card
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="card bg-dark text-center text-white">
+              <div class="card-header">
+                <h5>Your Collections</h5>
+              </div>
+              <div id="div-res" class="card-body"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 id="collection-title-change" class="fs-2 text-center"></h3>
+        <div
+          id="card-list"
+          class="card-parent col-12 col-lg-3 col-md-2 mb-5"
+        ></div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="h2">© 2025 Cards App. Tous droits réservés.</p>
+      <p class="h4">Contact: support@cardsapp.com</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
