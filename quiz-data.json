@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "question": "What does HTML stand for?",
+      "answer": "HyperText Markup Language",
+      "type": "text",
+      "options": [
+        "HyperText Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "HyperText Markdown Language"
+      ]
+    },
+    {
+      "question": "What is the purpose of CSS?",
+      "answer": "To style and design HTML elements",
+      "type": "text",
+      "options": [
+        "To style and design HTML elements",
+        "To add interactivity to web pages",
+        "To structure content",
+        "To store data"
+      ]
+    },
+    {
+      "question": "Is JavaScript used for interactivity?",
+      "answer": "true",
+      "type": "true_false"
+    }
+  ]
+}
